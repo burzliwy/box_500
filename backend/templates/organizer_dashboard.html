@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organizer Dashboard</title>
+    <script src="{{ url_for('static', filename='modules/create_game.js') }}"></script>
 </head>
 <body>
     <h1>Organizer Dashboard</h1>
+    <button id="create-game">Create Game</button>
+    <script>
+        document.getElementById("create-game").addEventListener("click", function() {
+            createGame();
+        });
+    </script>
+
 </body>
 </html>
